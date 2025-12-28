@@ -1,0 +1,12 @@
+numpy
+opencv-python
+open3d>=0.18.0
+pyyaml
+scipy
+pyrealsense2
+opencv-python
+numpy
+open3d
+pyyaml
+matplotlib
+scipy

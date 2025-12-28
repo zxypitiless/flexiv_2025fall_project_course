@@ -1,0 +1,46 @@
+general:
+  project_root: "."
+  save_debug_viz: true
+
+camera:
+  backend: "realsense"        # ✅ 实时采图
+  rs_serial: ""
+  rs_width:  640
+  rs_height: 480
+  rs_fps:    30
+
+calib:
+  T_base_cam: "data/calib/T_base_cam.json"
+
+calibration:
+  pattern: "chessboard"
+  chess_cols: 8
+  chess_rows: 8
+  chess_square: 0.018
+  touch_board_indices: [[0,0],[8,0],[8,5]]
+
+pcd:
+  voxel_size: 0.004
+  plane_distance: 0.005
+  cluster_eps: 0.015
+  cluster_min_points: 200
+  cyl_distance: 0.006
+  cyl_iter: 2000
+
+planner:
+  clearance: 0.004
+  pitch: 0.02
+  turns: 3
+  z0: -0.05
+  z1:  0.05
+  sample_per_turn: 200
+  lead_in: 0.08
+  lead_out: 0.08
+
+robot:
+  ip: "192.168.2.100"
+  mode: "cartesian"
+  speed: 0.05
+  save_only: true
+  backend: "flexiv"
+  
